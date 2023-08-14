@@ -9,11 +9,9 @@ export const PostCategories = (data) =>{
 export const DeleteCategories = (id) =>{
   return httpClient.delete(`/api/Catagories/${id}`)
 };
-
-export const UpdateCategories = (id) =>{
-  return httpClient.put(`/api/Catagories/${id}`)
+export const UpdateCategories = (id, data) =>{
+  return httpClient.put(`/api/Catagories/${id}`,data)
 };
-
 
 export const GetByIdCatagory = (id) =>{
   return httpClient.get(`/api/Catagories/${id}`)
